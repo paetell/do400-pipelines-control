@@ -1,7 +1,7 @@
 node('nodejs') {
     stage('Checkout') {
         git branch: 'main',
-        url: 'https://github.com/paetell/do400-pipelines-control/blob/bcb251405b0ab57c112dbec9161a8e01a4bf095f/pipelines-control/Jenkinsfile'
+        url: 'https://github.com/paetell/do400-pipelines-control'
     }
     stage('Backend Tests') {
         sh 'node ./backend/test.js'
