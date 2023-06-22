@@ -4,8 +4,8 @@ node('nodejs') {
         url: 'https://github.com/paetell/do400-pipelines-control'
     }
     stage('Backend Tests') {
-        sh 'node .pipelines-control/backend/test.js'
+        sh 'node pipelines-control/backend/test.js'
     }
-    stage('Frontend Tests') {sh 'node .pipelines-control/frontend/test.js'
+    stage('Frontend Tests') {sh 'node pipelines-control/frontend/test.js'
     }
 }
